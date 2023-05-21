@@ -1,4 +1,4 @@
-pyPDF2
+pypdf
 openai
 langchain
 llama_index

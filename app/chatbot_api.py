@@ -14,7 +14,6 @@ os.environ['OPENAI_API_KEY'] = OpenAiKey
 pdfs_path = 'dataPDF'
 def pdfDataload(path):
     pdf = SimpleDirectoryReader(path).load_data()
-    print(pdf)
     return pdf
 
 
@@ -25,7 +24,8 @@ def generateModel():
 
 
 # Indexar el contenido de los PDF
-index = GPTVectorStoreIndex.from_documents(pdfDataload(pdfs_path))
+getpdfs = pdfDataload(pdfs_path)
+index = GPTVectorStoreIndex.from_documents(getpdfs)
 service_context = ServiceContext.from_defaults(llm_predictor=generateModel())
 indexModel = GPTVectorStoreIndex.from_documents(pdfDataload(pdfs_path), service_context = service_context)
 
@@ -34,12 +34,16 @@ indexModel = GPTVectorStoreIndex.from_documents(pdfDataload(pdfs_path), service_
 
 # # cargar index del disco
 # index = GPTVectorStoreIndex.load_from_disk('index.json')
-
-while True:
-    query_engine = index.as_query_engine()
-    pregunta = input('Escribe tu pregunta \n') + "Responde en español"
-    respuesta = query_engine.query(pregunta)
-    for frase in textwrap .wrap(respuesta.response, width=100):
-        print(frase)
+if len(getpdfs) > 0 :
+    while True:
+        query_engine = index.as_query_engine()
+        pregunta = input('Escribe tu pregunta \n') + "Responde en español"
+        respuesta = query_engine.query(pregunta)
+        for frase in textwrap .wrap(respuesta.response, width=100):
+            print(frase)
+else: 
+    exist= os.path.exists(pdfs_path)
+    print(exist)
+    print('no se ha cargado Data, ruta: ', os.getcwd())
 
 
