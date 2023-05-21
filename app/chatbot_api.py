@@ -36,3 +36,4 @@ while True:
     for frase in textwrap .wrap(respuesta.response, width=100):
         print(frase)
 
+
