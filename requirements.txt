@@ -1,0 +1,8 @@
+pyPDF2
+openai
+langchain
+llama_index
+python-dotenv
+python-decouple
+azure-core
+tiktoken
