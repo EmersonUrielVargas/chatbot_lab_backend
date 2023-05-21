@@ -1,4 +1,5 @@
 from llama_index import GPTVectorStoreIndex, SimpleDirectoryReader, LLMPredictor, ServiceContext
+from llama_index import download_loader
 from langchain.chat_models import ChatOpenAI
 import textwrap
 
@@ -10,7 +11,7 @@ OpenAiKey = config('OPENAI_API_KEY')
 os.environ['OPENAI_API_KEY'] = OpenAiKey
 
 #Leer informacion de los PDF
-pdfs_path = '../dataPDF/'
+pdfs_path = 'dataPDF'
 def pdfDataload(path):
     pdf = SimpleDirectoryReader(path).load_data()
     print(pdf)
@@ -24,8 +25,9 @@ def generateModel():
 
 
 # Indexar el contenido de los PDF
+index = GPTVectorStoreIndex.from_documents(pdfDataload(pdfs_path))
 service_context = ServiceContext.from_defaults(llm_predictor=generateModel())
-index = GPTVectorStoreIndex.from_documents(pdfDataload(pdfs_path), service_context = service_context)
+indexModel = GPTVectorStoreIndex.from_documents(pdfDataload(pdfs_path), service_context = service_context)
 
 # persistir index
 #index.save_to_disk('index.json')
