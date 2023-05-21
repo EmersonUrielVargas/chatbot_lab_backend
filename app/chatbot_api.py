@@ -1,5 +1,4 @@
-from llama_index import GPTVectorStoreIndex, SimpleDirectoryReader, LLMPredictor, ServiceContext
-from llama_index import download_loader
+from llama_index import GPTVectorStoreIndex, LLMPredictor, ServiceContext
 from langchain.chat_models import ChatOpenAI
 import textwrap
 
@@ -12,9 +11,7 @@ os.environ['OPENAI_API_KEY'] = OpenAiKey
 
 #Leer informacion de los PDF
 pdfs_path = 'dataPDF'
-def pdfDataload(path):
-    pdf = SimpleDirectoryReader(path).load_data()
-    return pdf
+
 
 
 # Definir instacia del modelo
