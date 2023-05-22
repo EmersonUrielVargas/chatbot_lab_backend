@@ -19,3 +19,6 @@ def MakeChat(request: RequestChat):
         'message': formatResponse(question)
     }
     return response
+
+if __name__ == '__main__':
+    app.run()
