@@ -52,7 +52,11 @@ my_pairs = [
 
 
 """This method return the response of the chat with corpus"""
-def chat():
+def chat(message):
   chat = Chat(my_pairs)
-  response = chat.converse()
+  response = chat.respond(message)
+  # Verificar si la respuesta es None o vacía
+  if response is None or not response.strip():
+      response = "Next"
+    
   return response
