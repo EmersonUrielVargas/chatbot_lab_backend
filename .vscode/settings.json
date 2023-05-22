@@ -1,5 +1,7 @@
 {
     "python.analysis.extraPaths": [
-        "./app/chatbot"
+        "./app/chatbot",
+        "./app/utilities",
+        "./app/services"
     ]
 }

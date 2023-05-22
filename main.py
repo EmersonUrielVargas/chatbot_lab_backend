@@ -6,15 +6,16 @@ app = FastAPI()
 
 # from app.models import RequestChat
 class RequestChat(BaseModel):
-    id: int
     message: str
 
 
 @app.get('/')
 def startChat():
-    print('request entrada: ')
-    return {'message': "Hello World"}
+    return {'message': "Hello World desde chatbot_api"}
 @app.post('/')
-def MakeChat(request: RequestChat, response_model=None):
+def MakeChat(request: RequestChat):
     question = request.message 
-    return (formatResponse(question))
+    response = {
+        'message': formatResponse(question)
+    }
+    return response
