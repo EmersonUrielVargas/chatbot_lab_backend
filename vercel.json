@@ -15,7 +15,7 @@
       }
     ],
     "env": {
-        "OPENAI_API_KEY": "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",
+        "OPENAI_API_KEY": "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",
         "DATA_PATH": "dataPDF"
     },
     "git": {

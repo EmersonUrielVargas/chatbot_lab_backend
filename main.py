@@ -15,4 +15,7 @@ def startChat():
 @app.post('/')
 def MakeChat(request: RequestChat):
     question = request.message 
-    return (formatResponse(question))
+    response = {
+        'message': formatResponse(question)
+    }
+    return response
