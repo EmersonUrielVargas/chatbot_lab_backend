@@ -1,6 +1,6 @@
 import os
 from llama_index import GPTVectorStoreIndex, ServiceContext
-from app.utilities import pdfManager
+from utilities import pdfManager
 from chatbot  import llmModel
 from decouple import config
 
