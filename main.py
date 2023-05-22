@@ -13,7 +13,7 @@ class RequestChat(BaseModel):
 @app.get('/')
 def startChat():
     print('request entrada: ')
-    return {'message': "Hello World"}
+    return {'message': "Hello World desde chatbot_api"}
 @app.post('/')
 def MakeChat(request: RequestChat, response_model=None):
     question = request.message 
