@@ -14,7 +14,7 @@ pdfs_path = config('DATA_PATH')
 pdfIndex = pdfManager.pdfDataReader(pdfs_path)
 #index = GPTVectorStoreIndex.from_documents(pdfIndex)
 service_context = ServiceContext.from_defaults(llm_predictor= llmModel.generateModel())
-index = GPTVectorStoreIndex.from_documents(pdfIndex, service_context) 
+index = GPTVectorStoreIndex.from_documents(pdfIndex, service_context = service_context) 
 
 # persistir index
 #index.save_to_disk('index.json')

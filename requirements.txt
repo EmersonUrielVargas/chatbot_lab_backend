@@ -9,3 +9,5 @@ tiktoken
 fastapi
 uvicorn
 nltk
+requests==2.26.0
+transformers
