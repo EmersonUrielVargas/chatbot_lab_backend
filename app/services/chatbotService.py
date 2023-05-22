@@ -5,7 +5,7 @@ from app.chatbot.chatBotCorpusRive import generateMessage
 def formatResponse(question):
     print("La question es : " + question)
     response = chat(question)
-    print("La respuesta es : " +  res)
+    print("La respuesta es : " +  response)
     if response == 'Next':
         reqFormat = question + '\n Responde en español'
         print('El request format')
