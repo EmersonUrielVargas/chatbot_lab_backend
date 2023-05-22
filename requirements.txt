@@ -6,3 +6,5 @@ python-dotenv
 python-decouple
 azure-core
 tiktoken
+fastapi
+uvicorn

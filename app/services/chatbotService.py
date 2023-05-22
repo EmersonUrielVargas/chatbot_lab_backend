@@ -1,10 +1,5 @@
-import textwrap
-
-from chatbot import chatbotInstance
+from app.chatbot import chatbotInstance
 
 def formatResponse(question):
-    res = chatbotInstance.makeQuestion(question)
-    response = ''
-    for frase in textwrap.wrap(res.response, width=100):
-        response += frase + '\n'
-    return response
+    reqFormat = question + '\n Responde en español'
+    return chatbotInstance.makeQuestion(reqFormat).response

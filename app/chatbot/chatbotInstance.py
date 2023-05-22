@@ -1,7 +1,7 @@
 import os
 from llama_index import GPTVectorStoreIndex, ServiceContext
-from utilities import pdfManager
-from chatbot  import llmModel
+from app.utilities import pdfManager
+from app.chatbot  import llmModel
 from decouple import config
 
 # Carga de variables de sesion
