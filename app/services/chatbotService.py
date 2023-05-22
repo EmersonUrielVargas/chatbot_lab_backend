@@ -9,5 +9,5 @@ def formatResponse(question):
         reqFormat = question + '\n Responde en español'
         print('El request format')
         print(reqFormat)
-        response = chatbotInstance.makeQuestion(reqFormat).response
+        response = (chatbotInstance.makeQuestion(reqFormat)).response
     return response
