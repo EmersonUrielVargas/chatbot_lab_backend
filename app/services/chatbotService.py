@@ -1,5 +1,9 @@
 from app.chatbot import chatbotInstance
+from app.chatbot.chatBotCorpus import chat
 
 def formatResponse(question):
-    reqFormat = question + '\n Responde en español'
-    return chatbotInstance.makeQuestion(reqFormat).response
+    response = chat()
+    if response is None:
+        reqFormat = question + '\n Responde en español'
+        response = chatbotInstance.makeQuestion(reqFormat).response
+    return response

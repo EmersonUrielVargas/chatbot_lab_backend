@@ -1,5 +1,5 @@
 from services.chatbotService import formatResponse
-from services.chatBotCorpus import chat
+from chatBotCorpus import chat
 
 while True:
     # response = chat()

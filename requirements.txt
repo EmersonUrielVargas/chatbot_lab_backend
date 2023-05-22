@@ -8,3 +8,4 @@ azure-core
 tiktoken
 fastapi
 uvicorn
+nltk
