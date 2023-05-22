@@ -9,3 +9,4 @@ fastapi
 uvicorn
 nltk
 transformers
+gunicorn==20.1.0
