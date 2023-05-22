@@ -8,7 +8,7 @@
     "venv:activate": "source modules/bin/activate",
     "venv:deactivate": "deactivate",
     "venv:remove": "$ rm -rf modules",
-    "install:dependencies": "pip install -r requeriments.txt",
+    "install:dependencies": "pip install -r requirements.txt",
     "startFile": "python3 app/chatbot_api.py",
     "start": "uvicorn main:app --reload",
     "test": "echo \"Error: no test specified\" && exit 1"
