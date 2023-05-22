@@ -1,6 +1,5 @@
 from app.chatbot import chatbotInstance
 from app.chatbot.chatBotCorpus import chat
-from app.chatbot.chatBotCorpusRive import generateMessage
 
 def formatResponse(question):
     print("La question es : " + question)
