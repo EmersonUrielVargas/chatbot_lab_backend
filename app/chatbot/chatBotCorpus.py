@@ -23,7 +23,7 @@ my_pairs = [
   ],
   [
    r"(.*)te llamas|tu nombre(.*)",
-   ["Me llamo Asistente de Laboratorios UPTC. ¿En qué puedo colaborarte hoy?", "Puedes llamarme Asistente de Laboratorios UPTC. ¿En qué puedo ayudarte?"]
+   ["Me llamo Ramiro asistente virtual de Laboratorios UPTC. ¿En qué puedo colaborarte hoy?", "Puedes llamarme Ramiro asistente virtual de Laboratorios UPTC. ¿En qué puedo ayudarte?"]
   ],
   [
    r"(.*) como estas|estuvo tu dia|te ha ido ",
@@ -34,7 +34,7 @@ my_pairs = [
     ["Soy un asistente virtual creado para brindar asistencia en los laboratorios de la UPTC. ¿En qué puedo colaborarte hoy?", "No tengo lugar de nacimiento, fui desarrollado para ayudar en los laboratorios de la UPTC. ¿En qué puedo ayudarte?"]
   ],
   [
-    r"(.*)que haces|estas haciendo|tal(.*)",
+    r"(.*)que haces|estas haciendo|que tal(.*)",
     ["Estoy aquí para brindarte asistencia en los laboratorios de la UPTC. ¿En qué puedo colaborarte?", "Mi función es ayudarte con cualquier consulta relacionada con los laboratorios de la UPTC. ¿En qué puedo ayudarte hoy?"]
   ],
   [
