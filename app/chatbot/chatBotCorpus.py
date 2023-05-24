@@ -46,6 +46,10 @@ my_pairs = [
    ["De nada, estoy aquí para servirte. Si tienes más preguntas, no dudes en hacerlas.", "¡Gracias a ti! Si tienes más consultas, no dudes en preguntar. Estoy aquí para ayudarte."]
   ],
   [
+   r"(.*)que|cuales| servicios tiene|hay|ofrece(.*)",
+   ["Puedo brindarte informacion acerca de los principales servicios que ofrecen los distintos laboratorios de la uptc a demás de sus tarifas, ubicacion y contacto.", "Yo te ofrezco informacion sobre los servicios que ofrecen los laboratorios de la uptc incluyendo tarifas, ubicacion y contacto."]
+  ],
+  [
     r"(.*)adios|hasta luego|nos vemos|chao|bye|vemos(.*)",
     ["Hasta luego, que tengas un excelente día.", "Nos vemos la próxima vez. ¡Que tengas un buen día!", "¡Hasta luego! Si tienes más consultas, no dudes en volver."]
 ]]
