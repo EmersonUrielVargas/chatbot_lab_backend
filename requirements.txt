@@ -5,8 +5,9 @@ llama_index
 python-dotenv
 python-decouple
 azure-core
+tiktoken==0.4.0
 fastapi
 uvicorn
 nltk
+requests==2.31.0
 transformers
-gunicorn==20.1.0

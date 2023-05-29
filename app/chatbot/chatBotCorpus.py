@@ -23,7 +23,7 @@ my_pairs = [
   ],
   [
    r"(.*)te llamas|tu nombre(.*)",
-   ["Me llamo Asistente de Laboratorios UPTC. ¿En qué puedo colaborarte hoy?", "Puedes llamarme Asistente de Laboratorios UPTC. ¿En qué puedo ayudarte?"]
+   ["Me llamo Ramiro asistente virtual de Laboratorios UPTC. ¿En qué puedo colaborarte hoy?", "Puedes llamarme Ramiro asistente virtual de Laboratorios UPTC. ¿En qué puedo ayudarte?"]
   ],
   [
    r"(.*) como estas|estuvo tu dia|te ha ido ",
@@ -34,7 +34,7 @@ my_pairs = [
     ["Soy un asistente virtual creado para brindar asistencia en los laboratorios de la UPTC. ¿En qué puedo colaborarte hoy?", "No tengo lugar de nacimiento, fui desarrollado para ayudar en los laboratorios de la UPTC. ¿En qué puedo ayudarte?"]
   ],
   [
-    r"(.*)que haces|estas haciendo|tal(.*)",
+    r"(.*)que haces|estas haciendo|que tal(.*)",
     ["Estoy aquí para brindarte asistencia en los laboratorios de la UPTC. ¿En qué puedo colaborarte?", "Mi función es ayudarte con cualquier consulta relacionada con los laboratorios de la UPTC. ¿En qué puedo ayudarte hoy?"]
   ],
   [
@@ -44,6 +44,10 @@ my_pairs = [
   [
    r"(.*)gracias|muy amable|quit(.*)",
    ["De nada, estoy aquí para servirte. Si tienes más preguntas, no dudes en hacerlas.", "¡Gracias a ti! Si tienes más consultas, no dudes en preguntar. Estoy aquí para ayudarte."]
+  ],
+  [
+  r"(.*)(que|cuales) servicios (tiene|hay|ofrece) ?$",
+   ["Puedo brindarte informacion acerca de los principales servicios que ofrecen los distintos laboratorios de la uptc a demás de sus tarifas, ubicacion y contacto.", "Yo te ofrezco informacion sobre los servicios que ofrecen los laboratorios de la uptc incluyendo tarifas, ubicacion y contacto."]
   ],
   [
     r"(.*)adios|hasta luego|nos vemos|chao|bye|vemos(.*)",
